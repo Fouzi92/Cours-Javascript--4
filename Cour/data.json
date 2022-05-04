@@ -1,0 +1,27 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "diffEditor.wordWrap": "on",
+  "editor.wordWrap": "on",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "tabnine.experimentalAutoImports": true,
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Andromeda",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "deepl.apiKey": "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eS",
+  "deepl.usePro": true,
+  "liveSassCompile.settings.autoprefix": [
+  
+  ]
+}
