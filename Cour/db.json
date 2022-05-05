@@ -1,9 +1,24 @@
 {
-"posts" : [
-
-
-    
-]
-
-
+  "posts": [
+    {
+      "pseudo": "Chomeur",
+      "message": "Salut les chomeurs",
+      "id": 1
+    },
+    {
+      "pseudo": "Chomeur",
+      "message": "Salut les chomeurs",
+      "id": 2
+    },
+    {
+      "pseudo": "Chomeur",
+      "message": "Salut les chomeurs",
+      "id": 3
+    },
+    {
+      "pseudo": "Chomeur",
+      "message": "Salut les chomeurs",
+      "id": 4
+    }
+  ]
 }
