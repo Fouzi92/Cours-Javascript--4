@@ -63,13 +63,13 @@ document.querySelector("form").addEventListener("submit", () => {
 
 //-----------------------------------------------------------------------------
 // Asynchrone
-//----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 setTimeout(() => {
   //console.log("test");
 }, 5000);
 
 //Promise
-fetch("monlien").then((res) => res);
+// fetch("monlien").then((res) => res);
 
 // async/await
 async function fetchData() {
@@ -83,3 +83,53 @@ const fetchData2 = async () => {
   // attent que le "await" soit exécuté avant de faire la suite
   executeFonction();
 };
+
+//-----------------------------------------------------------------------------
+// Le JSON
+//-----------------------------------------------------------------------------
+
+// Méthode .json() => méthode qui s'auto-résout en royant le Body de la requete
+
+fetch("data.json")
+  .then((res) => res.json())
+  .then((data) => {
+    // Stringify => convertit en JSON
+    let settings = JSON.stringify(data);
+    // Parse => transforme json en object js
+    //console.log(JSON.parse(settings));
+  });
+
+//-----------------------------------------------------------------------------
+//  Web APi
+//-----------------------------------------------------------------------------
+
+//CLIENT STORAGE
+//--------------
+
+//Local storage
+
+localStorage.data = "JE suis chomeur";
+//document.body.textContent = localStorage.data;
+localStorage.removeItem("data");
+
+const obj = {
+  name: "Denis",
+  age: "49",
+  profession: "Chomeur",
+};
+// il faut passer des chaines de caractéres
+localStorage.user = JSON.stringify(obj);
+
+//console.log(JSON.parse(localStorage.user));
+
+// Session Storage
+//sessionStorage.dataSettings = "55px";
+//console.log(sessionStorage.dataSettings);
+
+//-----------------------------------------------------------------------------
+//  Cookies
+//-----------------------------------------------------------------------------
+
+document.cookie = "username=Chomeur123";
+// Bonne pratique
+document.cookie = "Pseudo=POle-Enploi;path=/;max-age=450000; secure; samesite";
