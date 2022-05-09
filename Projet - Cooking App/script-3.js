@@ -27,18 +27,18 @@ function mealsDisplay() {
             let ingredient = meal[`strIngredient${i}`];
             let measure = meal[`strMeasure${i}`];
 
-            ingredient.push(`<li>${ingredient} - ${measure}</li>`);
+            ingredients.push(`<li>${ingredient} - ${measure}</li>`);
           }
         }
 
-        return ` 
-         <li class="card">
-             <h2>${meal.strMeal}</h2>
-             <p>${meal.strArea}</p>
-             <img src=${meal.strMealThumb} alt="photo ${meal.strMeal}">
-             <ul>${ingredients.join("")}</ul>
-        </li>
-        `;
+        return `
+            <li class="card">
+              <h2>${meal.strMeal}</h2>
+              <p>${meal.strArea}</p>
+              <img src=${meal.strMealThumb} alt="photo ${meal.strMeal}">
+              <ul>${ingredients.join("")}</ul>
+            </li>
+            `;
       })
       .join("");
   }
